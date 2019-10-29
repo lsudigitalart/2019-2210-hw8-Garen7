@@ -58,10 +58,10 @@ class Worm{
   makeAntennae(){
     fill("black")
     stroke("black")
-    antennaeLeftX = this.x-this.size/3*(2*sin(this.dir)+2*cos(this.dir))
-    antennaeLeftY = this.y+this.size/3*(2*sin(this.dir)-2*cos(this.dir))
-    antennaeRightX = this.x-this.size/3*(2*sin(this.dir)-2*cos(this.dir))
-    antennaeRightY = this.y-this.size/3*(2*sin(this.dir)+2*cos(this.dir))
+    let antennaeLeftX = this.x-this.size/3*(2*sin(this.dir)+2*cos(this.dir))
+    let antennaeLeftY = this.y+this.size/3*(2*sin(this.dir)-2*cos(this.dir))
+    let antennaeRightX = this.x-this.size/3*(2*sin(this.dir)-2*cos(this.dir))
+    let antennaeRightY = this.y-this.size/3*(2*sin(this.dir)+2*cos(this.dir))
     //bulbs
     circle(antennaeRightX, antennaeRightY, 10)
     circle(antennaeLeftX, antennaeLeftY, 10)
