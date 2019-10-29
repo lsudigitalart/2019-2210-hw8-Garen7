@@ -75,7 +75,7 @@ class Worm{
   makeBall(c){
     fill(c)
     circle(this.x, this.y, this.size)
-    oldSize = this.size
+    let oldSize = this.size
     this.size = this.randomSize()
     this.dir = random(-HALF_PI, HALF_PI)+this.dir//keep it going in the same dir
     this.x = (oldSize+this.size)/2*sin(this.dir)+this.x
